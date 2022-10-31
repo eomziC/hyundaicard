@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>javascript modal</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link rel="stylesheet" href="css/common.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <!--    <script src="js/jquery.easypiechart.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script>
+</head>
+
+<body>
+<div id="body">
+    <header>
+        <div class="return"><button onclick=""><a href="https://ptx3p.app.goo.gl/mrzC"><img src="imgs/ico_left.svg" alt="뒤로가기"></a></button></div>
+        <div class="header_title"><span>보장분석</span></div>
+    </header>
+    <section>
+        <div class="sec1" id="sec1">
+            <div class="wrap">
+                <div class="black_box">
+                    <div class="case">
+                        <div>가입 건수</div>
+                        <span class="case_num">8</span>
+                    </div>
+                    <div class="line"></div>
+                    <div class="payment">
+                        <div>지출 금액</div>
+                        <div class="amount_box"><p>월</p><span class="amount">512,000</span>원</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sec2" id="sec2">
+            <div class="wrap">
+                <div class="hd_box">
+                    <h2>내 보장 요약</h2>
+                    <div class="sub_box">
+                        <div>
+                            <p class="red"></p>
+                            <p>부족 <span>1</span></p>
+                        </div>
+                        <div>
+                            <p class="blue"></p>
+                            <p>충분 <span>11</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="table_box">
+                    <div class="table_label">
+                        <div class="table_cell">
+                            <a href="#sec3"></a>
+                            <div class="img_box">
+                                <img src="imgs/ico_brain.svg" alt="뇌">
+                                <div class="txt_box">
+                                    <p>뇌</p>
+                                    <p class="red"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table_cell">
+                            <a href="#sec4"></a>
+                            <div class="img_box">
+                                <img src="imgs/ico_heart.svg" alt="심장">
+                                <div class="txt_box">
+                                    <p>심장</p>
+                                    <p class="red"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table_cell">
+                            <a href="#sec5"></a>
+                            <div class="img_box">
+                                <img src="imgs/ico_cancer.svg" alt="암">
+                                <div class="txt_box">
+                                    <p>암</p>
+                                    <p class="blue"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table_cell">
+                            <a href="#sec7"></a>
+                            <div class="img_box">
+                                <img src="imgs/ico_loss.svg" alt="뇌">
+                                <div class="txt_box">
+                                    <p>실손</p>
+                                    <p class="red"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table_label">
+                        <div class="table_cell">
+                            <a href="#sec8"></a>
+                            <div class="img_box">
+                                <img src="imgs/ico_treatment.svg" alt="뇌">
+                                <div class="txt_box">
+                                    <p>암치료</p>
+                                    <p class="red"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table_cell">
+                            <a href="#sec9"></a>
+                            <div class="img_box">
+                                <img src="imgs/ico_compensation.svg" alt="뇌">
+                                <div class="txt_box">
+                                    <p>일상배상</p>
+                                    <p class="blue"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table_cell">
+                            <a href="#sec10"></a>
+                            <div class="img_box">
+                                <img src="imgs/ico_operation.svg" alt="뇌">
+                                <div class="txt_box">
+                                    <p>수술</p>
+                                    <p class="red"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table_cell">
+                            <a href="#sec11"></a>
+                            <div class="img_box">
+                                <img src="imgs/ico_hospitalize.svg" alt="뇌">
+                                <div class="txt_box">
+                                    <p>입원</p>
+                                    <p class="blue"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table_label">
+                        <div class="table_cell">
+                            <a href="#sec12"></a>
+                            <div class="img_box">
+                                <img src="imgs/ico_dead.svg" alt="뇌">
+                                <div class="txt_box">
+                                    <p>사망</p>
+                                    <p class="red"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table_cell">
+                            <a href="#sec13"></a>
+                            <div class="img_box">
+                                <img src="imgs/ico_hindrance.svg" alt="뇌">
+                                <div class="txt_box">
+                                    <p>후유장해</p>
+                                    <p class="blue"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table_cell">
+                            <a href="#sec14"></a>
+                            <div class="img_box">
+                                <img src="imgs/ico_driver.svg" alt="뇌">
+                                <div class="txt_box">
+                                    <p>운전자</p>
+                                    <p class="red"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table_cell">
+                            <a href="#sec15"></a>
+                            <div class="img_box">
+                                <img src="imgs/ico_tooth.svg" alt="뇌">
+                                <div class="txt_box">
+                                    <p>치아</p>
+                                    <p class="blue"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sec3" id="sec3">
+            <div class="wrap">
+                <h2>보장별 분석</h2>
+                <div class="cg_wrap">
+                    <div class="cg_box">
+                        <div class="hashtag">
+                            <div class="cg_badge">뇌</div>
+                            <p>#뇌질환</p>
+                            <p>#고혈압</p>
+                            <p>#당뇨가주요원인</p>
+                        </div>
+                        <h3 class="cg_title">우리 몸에서 가장 중요한 뇌 <br/> 조금 더 준비하세요</h3>
+                        <div class="cg_img">
+                            <div class="enough">
+                                <img src="imgs/img_brain_enough.svg" alt=""/>
+                            </div>
+                            <div class="lack">
+                                <img src="imgs/img_brain_lack.svg" alt=""/>
+                            </div>
+                        </div>
+                        <div class="cg_sub_title">뇌 보장이 <span class="condition">충분해요</span></div>
+
+                        <div class="swiper-container mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide stBtn">
+                                    <div class="btn_ct red">
+                                        <div class="ct_up">부족</div>
+                                        <img src="imgs/ico_right.svg" alt="">
+                                    </div>
+                                    <div class="ct_down">뇌혈관질환</div>
+                                </div>
+                                <div class="swiper-slide stBtn">
+                                    <div class="btn_ct blue">
+                                        <div class="ct_up">부족</div>
+                                        <img src="imgs/ico_right.svg" alt="">
+                                    </div>
+                                    <div class="ct_down">뇌출혈</div>
+                                </div>
+                                <div class="swiper-slide stBtn">
+                                    <div class="btn_ct blue">
+                                        <div class="ct_up">부족</div>
+                                        <img src="imgs/ico_right.svg" alt="">
+                                    </div>
+                                    <div class="ct_down">뇌졸중</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sec4" id="sec4">
+            <div class="wrap">
+                <div class="cg_wrap">
+                    <div class="cg_box">
+                        <div class="hashtag">
+                            <div class="cg_badge">심장</div>
+                            <p>#심장질환</p>
+                            <p>#고혈압</p>
+                            <p>#흡연인주요원인</p>
+                        </div>
+                        <h3 class="cg_title">든든하게 준비하셨네요 <br/> 심장이 두근두근</h3>
+                        <div class="cg_img">
+                            <div class="enough">
+                                <img src="imgs/img_heart_enough.svg" alt=""/>
+                            </div>
+                            <div class="lack">
+                                <img src="imgs/img_heart_lack.svg" alt=""/>
+                            </div>
+                        </div>
+                        <div class="cg_sub_title">심장 보장이 <span class="condition">충분해요</span></div>
+
+                        <div class="swiper-container mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide stBtn">
+                                    <div class="btn_ct red">
+                                        <div class="ct_up">부족</div>
+                                        <img src="imgs/ico_right.svg" alt="">
+                                    </div>
+                                    <div class="ct_down">허혈성 심장질환</div>
+                                </div>
+                                <div class="swiper-slide stBtn">
+                                    <div class="btn_ct blue">
+                                        <div class="ct_up">충분</div>
+                                        <img src="imgs/ico_right.svg" alt="">
+                                    </div>
+                                    <div class="ct_down">급성심근경색</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sec5" id="sec5">
+            <div class="wrap">
+                <div class="cg_wrap">
+                    <div class="cg_box">
+                        <div class="hashtag">
+                            <div class="cg_badge">암</div>
+                            <p>#암보장</p>
+                            <p>#한국인사망1위</p>
+                        </div>
+                        <h3 class="cg_title">암 준비는 아직이시군요 <br/> 지금 바로 준비하세요</h3>
+                        <div class="cg_img">
+                            <div class="enough">
+                                <img src="imgs/img_cancer_enough.svg" alt=""/>
+                            </div>
+                            <div class="lack">
+                                <img src="imgs/img_cancer_lack.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="cg_sub_title">암 보장이 <span class="condition">부족해요</span></div>
+
+                        <div class="swiper-container mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide stBtn">
+                                    <div class="btn_ct red">
+                                        <div class="ct_up">부족</div>
+                                        <img src="imgs/ico_right.svg" alt="">
+                                    </div>
+                                    <div class="ct_down">일반암</div>
+                                </div>
+                                <div class="swiper-slide stBtn">
+                                    <div class="btn_ct blue">
+                                        <div class="ct_up">충분</div>
+                                        <img src="imgs/ico_right.svg" alt="">
+                                    </div>
+                                    <div class="ct_down">유병자암</div>
+                                </div>
+                                <div class="swiper-slide stBtn">
+                                    <div class="btn_ct red">
+                                        <div class="ct_up">부족</div>
+                                        <img src="imgs/ico_right.svg" alt="">
+                                    </div>
+                                    <div class="ct_down">소액암</div>
+                                </div>
+                                <div class="swiper-slide stBtn">
+                                    <div class="btn_ct blue">
+                                        <div class="ct_up">충분</div>
+                                        <img src="imgs/ico_right.svg" alt="">
+                                    </div>
+                                    <div class="ct_down">고액암</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sec6" id="sec6">
+            <div class="wrap">
+                <h4>아직 가입한 보험을 <br/> 모두 연결하지 않았나요?</h4>
+                <p>정확한 분석을 위해 보험 추가 연결하세요.</p>
+                <div class="black_box"><a href="https://ptx3p.app.goo.gl/XGPn">+ 보험 추가</a></div>
+            </div>
+        </div>
+        <div class="sec7" id="sec7">
+            <div class="wrap">
+                <div class="cg_wrap">
+                    <div class="cg_box">
+                        <div class="hashtag">
+                            <div class="cg_badge">실손</div>
+                            <p>#실손의료비</p>
+                            <p>#제2국민건강보험</p>
+                        </div>
+                        <p class="cg_title">역시! 잘 준비되어있군요 <br/> 병원비 꼭 청구하세요</p>
+                        <div class="cg_img">
+                            <div class="enough">
+                                <img src="imgs/img_loss_have.svg" alt="" />
+                            </div>
+                            <div class="lack">
+                                <img src="imgs/img_loss_no.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="cg_sub_title">실손 보장이 <span class="condition">충분해요</span></div>
+
+                        <div class="swiper-container mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide dnBtn">
+                                    <div class="btn_ct blue">
+                                        <div class="ct_up">충분</div>
+                                        <img src="imgs/ico_right.svg" alt="">
+                                    </div>
+                                    <div class="ct_down">질병</div>
+                                </div>
+                                <div class="swiper-slide dnBtn">
+                                    <div class="btn_ct blue">
+                                        <div class="ct_up">충분</div>
+                                        <img src="imgs/ico_right.svg" alt="">
+                                    </div>
+                                    <div class="ct_down">상해</div>
+                                </div>
+                                <div class="swiper-slide dnBtn">
+                                    <div class="btn_ct blue">
+                                        <div class="ct_up">충분</div>
+                                        <img src="imgs/ico_right.svg" alt="">
+                                    </div>
+                                    <div class="ct_down">질병+상해</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sec8" id="sec8">
+            <div class="wrap">
+                <div class="cg_wrap">
+                    <div class="cg_box">
+                        <div class="hashtag">
+                            <div class="cg_badge">암치료</div>
+                            <p>#암치료비</p>
+                            <p>#병원비부담</p>
+                        </div>
+                        <h3 class="cg_title">비싼 암치료 <br/> 준비는 지금이에요</h3>
+                        <div class="cg_img">
+                            <div class="enough">
+                                <img src="imgs/img_treatment_enough.svg" alt="" />
+                            </div>
+                            <div class="lack">
+                                <img src="imgs/img_treatment_lack.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="cg_sub_title">암치료 보장이 <span class="condition">부족해요</span></div>
+
+                        <div class="swiper-container mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide stBtn">
+                                    <div class="btn_ct red">
+                                        <div class="ct_up">부족</div>
+                                        <img src="imgs/ico_right.svg" alt="">
+                                    </div>
+                                    <div class="ct_down">항암방사선 약물치료비</div>
+                                </div>
+                                <div class="swiper-slide stBtn">
+                                    <div class="btn_ct red">
+                                        <div class="ct_up">부족</div>
+                                        <img src="imgs/ico_right.svg" alt="">
+                                    </div>
+                                    <div class="ct_down">고액 항암치료비</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sec9" id="sec9">
+            <div class="wrap">
+                <div class="cg_wrap">
+                    <div class="cg_box">
+                        <div class="hashtag">
+                            <div class="cg_badge">일상생활</div>
+                            <p>#일상배상</p>
+                            <p>#누수</p>
+                            <p>#핸드폰파손</p>
+                        </div>
+                        <h3 class="cg_title">늦지 않았어요 <br/> 일상생활 위험을 대비하세요</h3>
+                        <div class="cg_img">
+                            <div class="enough">
+                                <img src="imgs/img_compensation_enough.svg" alt="" />
+                            </div>
+                            <div class="lack">
+                                <img src="imgs/img_compensation_lack.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="cg_sub_title">일상생활 보장이 <span class="condition">부족해요</span></div>
+
+                        <div class="swiper-container mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide stBtn">
+                                    <div class="btn_ct blue">
+                                        <div class="ct_up">충분</div>
+                                        <img src="imgs/ico_right.svg" alt="">
+                                    </div>
+                                    <div class="ct_down">골절진단</div>
+                                </div>
+                                <div class="swiper-slide stBtn">
+                                    <div class="btn_ct red">
+                                        <div class="ct_up">부족</div>
+                                        <img src="imgs/ico_right.svg" alt="">
+                                    </div>
+                                    <div class="ct_down">화상진단</div>
+                                </div>
+                                <div class="swiper-slide dnBtn">
+                                    <div class="btn_ct red">
+                                        <div class="ct_up">부족</div>
+                                        <img src="imgs/ico_right.svg" alt="">
+                                    </div>
+                                    <div class="ct_down">일상생활 배상책임</div>
+                                </div>
+                                <div class="swiper-slide stBtn">
+                                    <div class="btn_ct red">
+                                        <div class="ct_up">부족</div>
+                                        <img src="imgs/ico_right.svg" alt="">
+                                    </div>
+                                    <div class="ct_down">가족생활 배상책임</div>
+                                </div>
+                                <div class="swiper-slide stBtn">
+                                    <div class="btn_ct red">
+                                        <div class="ct_up">부족</div>
+                                        <img src="imgs/ico_right.svg" alt="">
+                                    </div>
+                                    <div class="ct_down">자녀일상생활 배상책임</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--            <div class="banner">-->
+        <!--                <a href="#" class="banner_txt">-->
+        <!--                    <img src="imgs/img_banner.png" alt="">-->
+        <!--                </a>-->
+        <!--            </div>-->
+        <div class="sec10" id="sec10">
+            <div class="wrap">
+                <div class="cg_wrap">
+                    <div class="cg_box">
+                        <div class="hashtag">
+                            <div class="cg_badge">수술</div>
+                            <p>#질병수술비</p>
+                            <p>#상해수술비</p>
+                            <p>#가성비보험</p>
+                        </div>
+                        <h3 class="cg_title">수술비 걱정 없이 <br/> 지금 준비하는 건 어떨까요?</h3>
+                        <div class="cg_img">
+                            <div class="enough">
+                                <img src="imgs/img_operation_enough.svg" alt="" />
+                            </div>
+                            <div class="lack">
+                                <img src="imgs/img_operation_lack.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="cg_sub_title">수술 보장이 <span class="condition">부족해요</span></div>
+
+                        <div class="swiper-container mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide stBtn">
+                                    <div class="btn_ct blue">
+                                        <div class="ct_up">충분</div>
+                                        <img src="imgs/ico_right.svg" alt="">
+                                    </div>
+                                    <div class="ct_down">질병수술</div>
+                                </div>
+                                <div class="swiper-slide stBtn">
+                                    <div class="btn_ct red">
+                                        <div class="ct_up">부족</div>
+                                        <img src="imgs/ico_right.svg" alt="">
+                                    </div>
+                                    <div class="ct_down">질병종수술</div>
+                                </div>
+                                <div class="swiper-slide stBtn">
+                                    <div class="btn_ct red">
+                                        <div class="ct_up">부족</div>
+                                        <img src="imgs/ico_right.svg" alt="">
+                                    </div>
+                                    <div class="ct_down">상해종수술</div>
+                                </div>
+                                <div class="swiper-slide stBtn">
+                                    <div class="btn_ct red">
+                                        <div class="ct_up">부족</div>
+                                        <img src="imgs/ico_right.svg" alt="">
+                                    </div>
+                                    <div class="ct_down">상해수술</div>
+                                </div>
+                                <div class="swiper-slide stBtn">
+                                    <div class="btn_ct red">
+                                        <div class="ct_up">부족</div>
+                                        <img src="imgs/ico_right.svg" alt="">
+                                    </div>
+                                    <div class="ct_down">뇌혈관질환 수술</div>
+                                </div>
+                                <div class="swiper-slide stBtn">
+                                    <div class="btn_ct red">
+                                        <div class="ct_up">부족</div>
+                                        <img src="imgs/ico_right.svg" alt="">
+                                    </div>
+                                    <div class="ct_down">허혈성심장 질환수술</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sec11" id="sec11">
+            <div class="wrap">
+                <div class="cg_wrap">
+                    <div class="cg_box">
+                        <div class="hashtag">
+                            <div class="cg_badge">입원</div>
+                            <p>#입원비</p>
+                            <p>#간병비</p>
+                        </div>
+                        <h3 class="cg_title">오래 입원해도 부담 없도록 <br/> 더 든든하게 준비해요</h3>
+                        <div class="cg_img">
+                            <div class="enough">
+                                <img src="imgs/img_hospitalize_enough.svg" alt="" />
+                            </div>
+                            <div class="lack">
+                                <img src="imgs/img_hospitalize_lack.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="cg_sub_title">입원 보장이 <span class="condition">부족해요</span></div>
+
+                        <div class="swiper-container mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide stBtn">
+                                    <div class="btn_ct blue">
+                                        <div class="ct_up">충분</div>
+                                        <img src="imgs/ico_right.svg" alt="">
+                                    </div>
+                                    <div class="ct_down">간병인지원 질병입원일당</div>
+                                </div>
+                                <div class="swiper-slide stBtn">
+                                    <div class="btn_ct red">
+                                        <div class="ct_up">부족</div>
+                                        <img src="imgs/ico_right.svg" alt="">
+                                    </div>
+                                    <div class="ct_down">간병인지원 상해입원일당</div>
+                                </div>
+                                <div class="swiper-slide stBtn">
+                                    <div class="btn_ct red">
+                                        <div class="ct_up">부족</div>
+                                        <img src="imgs/ico_right.svg" alt="">
+                                    </div>
+                                    <div class="ct_down">질병인원일당</div>
+                                </div>
+                                <div class="swiper-slide stBtn">
+                                    <div class="btn_ct red">
+                                        <div class="ct_up">부족</div>
+                                        <img src="imgs/ico_right.svg" alt="">
+                                    </div>
+                                    <div class="ct_down">상해입원일당</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sec12" id="sec12">
+            <div class="wrap">
+                <div class="cg_wrap">
+                    <div class="cg_box">
+                        <div class="hashtag">
+                            <div class="cg_badge">사망</div>
+                            <p>#20%은퇴전사망</p>
+                            <p>#질병사망</p>
+                            <p>#상해사망</p>
+                        </div>
+                        <h3 class="cg_title">부족하지 않게 조금 더 <br/> 준비해 보세요</h3>
+                        <div class="cg_img">
+                            <div class="enough">
+                                <img src="imgs/img_dead_enough.svg" alt="" />
+                            </div>
+                            <div class="lack">
+                                <img src="imgs/img_dead_lack.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="cg_sub_title">사망 보장이 <span class="condition">부족해요</span></div>
+
+                        <div class="swiper-container mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide stBtn">
+                                    <div class="btn_ct blue">
+                                        <div class="ct_up">충분</div>
+                                        <img src="imgs/ico_right.svg" alt="">
+                                    </div>
+                                    <div class="ct_down">질병사망</div>
+                                </div>
+                                <div class="swiper-slide stBtn">
+                                    <div class="btn_ct red">
+                                        <div class="ct_up">부족</div>
+                                        <img src="imgs/ico_right.svg" alt="">
+                                    </div>
+                                    <div class="ct_down">상해사망</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sec13" id="sec13" >
+            <div class="wrap">
+                <div class="cg_wrap">
+                    <div class="cg_box">
+                        <div class="hashtag">
+                            <div class="cg_badge">후유장해</div>
+                            <p>#영구적훼손</p>
+                            <p>#신체부위결손</p>
+                        </div>
+                        <h3 class="cg_title">질병과 사고로 인한 <br/> 장해를 대비해 보세요</h3>
+                        <div class="cg_img">
+                            <div class="enough">
+                                <img src="imgs/img_hindrance_enough.svg" alt="" />
+                            </div>
+                            <div class="lack">
+                                <img src="imgs/img_hindrance_lack.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="cg_sub_title">후유장해 보장이 <span class="condition">부족해요</span></div>
+
+                        <div class="swiper-container mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide stBtn">
+                                    <div class="btn_ct red">
+                                        <div class="ct_up">부족</div>
+                                        <img src="imgs/ico_right.svg" alt="">
+                                    </div>
+                                    <div class="ct_down">질병후유장해 x3%</div>
+                                </div>
+                                <div class="swiper-slide stBtn">
+                                    <div class="btn_ct red">
+                                        <div class="ct_up">부족</div>
+                                        <img src="imgs/ico_right.svg" alt="">
+                                    </div>
+                                    <div class="ct_down">질병50%이상 후유장해</div>
+                                </div>
+                                <div class="swiper-slide stBtn">
+                                    <div class="btn_ct red">
+                                        <div class="ct_up">부족</div>
+                                        <img src="imgs/ico_right.svg" alt="">
+                                    </div>
+                                    <div class="ct_down">질병80%이상 후유장해</div>
+                                </div>
+                                <div class="swiper-slide stBtn">
+                                    <div class="btn_ct red">
+                                        <div class="ct_up">부족</div>
+                                        <img src="imgs/ico_right.svg" alt="">
+                                    </div>
+                                    <div class="ct_down">상해후유장해 x3%</div>
+                                </div>
+                                <div class="swiper-slide stBtn">
+                                    <div class="btn_ct red">
+                                        <div class="ct_up">부족</div>
+                                        <img src="imgs/ico_right.svg" alt="">
+                                    </div>
+                                    <div class="ct_down">상해50%이상 후유장해</div>
+                                </div>
+                                <div class="swiper-slide stBtn">
+                                    <div class="btn_ct red">
+                                        <div class="ct_up">부족</div>
+                                        <img src="imgs/ico_right.svg" alt="">
+                                    </div>
+                                    <div class="ct_down">상해80%이상 후유장해</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sec14" id="sec14">
+            <div class="wrap">
+                <div class="cg_wrap">
+                    <div class="cg_box">
+                        <div class="hashtag">
+                            <div class="cg_badge">운전자</div>
+                            <p>#형사처벌</p>
+                            <p>#교통사고상해보장</p>
+                            <p>#벌금</p>
+                        </div>
+                        <h3 class="cg_title">사고 위험을 완벽히 준비한 진정한 보험 마스터</h3>
+                        <div class="cg_img">
+                            <div class="enough">
+                                <img src="imgs/img_driver_enough.svg" alt="" />
+                            </div>
+                            <div class="lack">
+                                <img src="imgs/img_driver_lack.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="cg_sub_title">운전자 보장이 <span class="condition">충분해요</span></div>
+
+                        <div class="swiper-container mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide stBtn">
+                                    <div class="btn_ct red">
+                                        <div class="ct_up">충분</div>
+                                        <img src="imgs/ico_right.svg" alt="">
+                                    </div>
+                                    <div class="ct_down">형사합의지원</div>
+                                </div>
+                                <div class="swiper-slide stBtn">
+                                    <div class="btn_ct blue">
+                                        <div class="ct_up">충분</div>
+                                        <img src="imgs/ico_right.svg" alt="">
+                                    </div>
+                                    <div class="ct_down">변호사선임비</div>
+                                </div>
+                                <div class="swiper-slide stBtn">
+                                    <div class="btn_ct red">
+                                        <div class="ct_up">부족</div>
+                                        <img src="imgs/ico_right.svg" alt="">
+                                    </div>
+                                    <div class="ct_down">벌금비</div>
+                                </div>
+                                <div class="swiper-slide stBtn">
+                                    <div class="btn_ct red">
+                                        <div class="ct_up">부족</div>
+                                        <img src="imgs/ico_right.svg" alt="">
+                                    </div>
+                                    <div class="ct_down">자동차부상 치료비</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sec15" id="sec15">
+            <div class="wrap">
+                <div class="cg_wrap">
+                    <div class="cg_box">
+                        <div class="hashtag">
+                            <div class="cg_badge">치아</div>
+                            <p>#임플란트치료비</p>
+                            <p>#보존치료비</p>
+                        </div>
+                        <h3 class="cg_title">치과도 무서운데 치료비까지 부담되면 더 무서워요</h3>
+                        <div class="cg_img">
+                            <div class="enough">
+                                <img src="imgs/img_tooth_enough.svg" alt="" />
+                            </div>
+                            <div class="lack">
+                                <img src="imgs/img_tooth_lack.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="cg_sub_title">치아 보장이 <span class="condition">부족해요</span></div>
+
+                        <div class="swiper-container mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide stBtn">
+                                    <div class="btn_ct blue">
+                                        <div class="ct_up">충분</div>
+                                        <img src="imgs/ico_right.svg" alt="">
+                                    </div>
+                                    <div class="ct_down">치과치료 (보존)</div>
+                                </div>
+                                <div class="swiper-slide stBtn">
+                                    <div class="btn_ct red">
+                                        <div class="ct_up">부족</div>
+                                        <img src="imgs/ico_right.svg" alt="">
+                                    </div>
+                                    <div class="ct_down">치과치료 (보철)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scrollTop" style="cursor:pointer;" onclick="window.scrollTo(0,0);">
+            <img src="imgs/ico_up.png" alt="">
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="ft">
+            <img src="imgs/img_logo.svg" alt="RETURNS" class="ft-logo"/>
+            <div class="company-info">
+                <p>(주)마이크로프로텍트인슈코어 대표자 : 김형종</p>
+                <p> 개인정보보호책임자 : 김형종</p>
+                <p>사업자등록번호 : 710-81-02083</p>
+                <p> 보험대리점등록번호 : 2020040032</p>
+                <p>주소 : 서울특별시 서초구 사임당로 32, 2층 (우편번호 06651)</p>
+                <p>이메일 : cscenter@mpinsucore.com</p>
+                <p>전화 : <a href="tel:02-6956-1722">02-6956-1722</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Modal 도넛차트 -->
+    <div id="overlay1">
+        <div class="modal">
+            <div class="modal_header">
+                <h3><span>질병실손</span> 보장</h3>
+                <p><span>30</span>대 또래는 <span>85</span>%가 가입했어요</p>
+                <span class="close"><img src="imgs/ico_close.svg" alt=""></span>
+            </div>
+            <div class="modal_content">
+                <div class="chart-container">
+                    <div class="circle unsub"> <!-- class명 unsub으로 가입 미가입 분류-->
+                        <img src="imgs/ico_chk.png" alt="">
+                        <p class="join">미가입</p>
+                        <p class="txt1">나</p>
+                    </div>
+                    <div class="chart chart1" data-percent="85"> <!--display 로 껐다켰다-->
+                        <p class="title"><span>85</span>% 가입</p>
+                        <p class="txt2">또래</p>
+                    </div>
+                    <div class="circle no_count"> <!-- class명 no_count 통계가 없어요-->
+                        <p class="title">통계가<br/>없어요</p>
+                        <p class="txt2">또래</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sub_content">
+                <p>또래 통계 : 한국신용정보원</p>
+            </div>
+            <div class="modal_footer">
+                <button class="close btn">확인</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 막대차트 -->
+    <!--또래 금액 = cost1, 나 금액 = cost2, 차액 = cost3-->
+    <div id="overlay2">
+        <div class="modal">
+            <div class="modal_header">
+                <h3><span>뇌혈관질환</span> 보장</h3>
+                <p><span class="age">30</span>대 또래 대비 <span class="cost3">3000만</span>원</p>
+                <p><span class="red">부족해요</span></p>
+                <span class="close"><img src="imgs/ico_close.svg" alt=""></span>
+            </div>
+            <div class="modal_content">
+                <div class="chart-container">
+                    <div class="myScore">
+                        <p class="txt1"><span class="cost2"></span>원</p>
+                        <div class="hole">
+                            <div class="redBox"></div>
+                        </div>
+                        <p class="txt2">나</p>
+                    </div>
+                    <div class="avgScore">
+                        <p class="txt1"><span class="cost1"></span>원</p>
+                        <div class="hole">
+                            <div class="greyBox"></div>
+                        </div>
+                        <p class="txt2">또래</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sub_content">
+                <p>또래 통계 : 한국신용정보원</p>
+            </div>
+            <div class="modal_footer">
+                <button class="close btn">확인</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // 도넛모달창 열기 이벤트
+    $(".dnBtn").on("click", function () {
+        $("#overlay1").css({
+            display: "block",
+            opacity: 1
+        });
+    });
+    // 도넛모달창 닫기 이벤트
+    $(".close").on("click", function () {
+        $("#overlay1").css({
+            display: "none",
+            opacity: 0
+        });
+    });
+    $(document).on("click", function (e) {
+        if ($("#overlay1").is(e.target)) {
+            $("#overlay1").css({
+                display: "none",
+                opacity: 0
+            });
+        }
+    });
+
+    // 막대모달창 열기 이벤트
+    $(".stBtn").on("click", function () {
+        $("#overlay2").css({
+            display: "block",
+            opacity: 1
+        });
+    });
+    // 막대모달창 닫기 이벤트
+    $(".close").on("click", function () {
+        $("#overlay2").css({
+            display: "none",
+            opacity: 0
+        });
+    });
+    $(document).on("click", function (e) {
+        if ($("#overlay2").is(e.target)) {
+            $("#overlay2").css({
+                display: "none",
+                opacity: 0
+            });
+        }
+    });
+
+</script>
+<script>
+    $('.chart').easyPieChart({
+        barColor: function() {
+            let ctx = this.renderer.getCtx();
+            let canvas = this.renderer.getCanvas();
+            let gradient = ctx.createLinearGradient(150,300,canvas.width,-50);
+            gradient.addColorStop(0, "#0070F0");
+            gradient.addColorStop(1, "#0070F0");
+            return gradient;
+        },  //차트가 그려질 색
+        trackColor: '#eee',  // 차트가 그려지는 트랙의 기본 배경색(chart1 의 회색부분)
+        lineCap: 'round', // 차트 선의 모양
+        lineWidth: 30, // 차트 선의 두께
+        size: 300, // 차트크기
+        animate: 3000, // 그려지는 시간
+        onStart: $.noop,
+        onStop: $.noop,
+    });
+
+</script>
+
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+    let swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+</script>
+<script>
+    $(window).scroll(function(){
+        let sct = $(window).scrollTop();
+        let aa = $('.scrollTop');
+        let scroll = aa.offset().top;
+        scroll = 480;
+        if(sct>scroll){
+            $('.scrollTop').css('display','block');
+        }else{
+            $('.scrollTop').css('display','none');
+        }
+    });
+</script>
+
+
+</body>
+</html>
